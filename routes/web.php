@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('recetas/{nacionalidad}', 'RecetasController@devuelveReceta');
+Route::get('recetas/{nacionalidad}', 'RecetasController@devuelveRecetas');
+Route::get('receta/{id}', 'RecetasController@devuelveReceta');
