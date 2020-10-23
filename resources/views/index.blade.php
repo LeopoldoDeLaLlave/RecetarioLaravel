@@ -15,15 +15,15 @@
 
 <div class="row"> 
     <div class="col-4 text-center">
-        <a href="{{url('pregunta', ['Historia'])}}" class="btn btn-light btn-lg btn-block">Española</a>
+        <a href="{{url('recetas', ['Española'])}}" class="btn btn-light btn-lg btn-block">Española</a>
     </div>
 
     <div class="col-4 text-center">
-        <a href="{{url('pregunta', ['Historia'])}}" class="btn btn-light btn-lg btn-block">Italiana</a>
+        <a href="{{url('recetas', ['Italiana'])}}" class="btn btn-light btn-lg btn-block">Italiana</a>
     </div>
 
     <div class="col-4 text-center">
-        <a href="{{url('pregunta', ['Ingles'])}}" class="btn btn-light btn-lg btn-block">Venezolana</a>
+        <a href="{{url('recetas', ['Venezolana'])}}" class="btn btn-light btn-lg btn-block">Venezolana</a>
     </div>
 </div>
 
