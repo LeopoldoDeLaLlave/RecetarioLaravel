@@ -8,7 +8,8 @@
 
 
 
-    @for ($i = 0; $i < count($receta); $i++) <div class="row">
+    @for ($i = 0; $i < count($receta); $i++) 
+    <div class="row">
         <div class="col-6">
             <div class="card h-1 center-block" style="width: 18rem;">
                 <div class="card-body">

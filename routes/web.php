@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/subir', function () {
+    return view('subir');
+});
+
 Route::get('recetas/{nacionalidad}', 'RecetasController@devuelveRecetas');
 Route::get('receta/{id}', 'RecetasController@devuelveReceta');
