@@ -15,4 +15,15 @@ class RecetasController extends Controller
     public function devuelveReceta($id){
         return view('receta')->with('receta', Recetas::where('id', $id)->get());
     }
+
+    public function subirReceta(Request $request){
+        $receta = new Recetas();
+        $receta->nombre=$request->nombre;
+        $receta->nacionalidad=$request->nacionalidad;
+        $receta->ingredientes=$request->ingredientes;
+        $receta->nombre=$request->nombre;
+        $receta->explicacione=$request->explicacion;
+        $receta->tiempo=$request->tiempo;
+        $receta->save();
+    }
 }

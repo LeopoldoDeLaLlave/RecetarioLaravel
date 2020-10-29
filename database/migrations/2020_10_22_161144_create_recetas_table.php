@@ -20,6 +20,7 @@ class CreateRecetasTable extends Migration
             $table->string('ingredientes', 1024);
             $table->text('explicacion', 20000);
             $table->string('tiempo');
+            $table->string('ruta');
         });
     }
 

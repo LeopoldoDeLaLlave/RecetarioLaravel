@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('index');
 });
@@ -21,6 +23,8 @@ Route::get('/', function () {
 Route::get('/subir', function () {
     return view('subir');
 });
+
+Route::post('/subir', 'RecetasController@subirReceta');
 
 Route::get('recetas/{nacionalidad}', 'RecetasController@devuelveRecetas');
 Route::get('receta/{id}', 'RecetasController@devuelveReceta');
