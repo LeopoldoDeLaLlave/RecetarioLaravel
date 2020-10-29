@@ -12,6 +12,7 @@
     <div class="row">
         <div class="col-6">
             <div class="card h-1 center-block" style="width: 18rem;">
+            <img class="card-img-top" src="{{$receta[$i]->ruta}}" alt="foto">
                 <div class="card-body">
                     <a href="{{url('receta', [$receta[$i]->id])}}">
                         <h5 class="card-title">{{ $receta[$i]->nombre }}</h5>
@@ -27,7 +28,7 @@
         @endphp
         @if ($i <=(count($receta)-1)) <div class="col-6 ">
             <div class="card h-1 center-block" style="width: 18rem;">
-                <img class="card-img-top" src="{{$receta[0]->ruta}}" alt="foto">
+                <img class="card-img-top" src="{{$receta[$i]->ruta}}" alt="foto">
                 <div class="card-body">
                     <a href="{{url('receta', [$receta[$i]->id])}}">
                         <h5 class="card-title">{{ $receta[$i]->nombre }}</h5>
