@@ -22,9 +22,8 @@
                     <h6> <b>Ingredientes</b></h6>
                     <p class="card-text"> {{$receta[0]->ingredientes}}</p>
                     <br>
-                    <h6> <b>Preparacion</b> </h6>
+                    <h6> <b>Preparación</b> </h6>
                     <p class="card-text"> {!! nl2br(e($receta[0]->explicacion)) !!}</p>
-                    <h1>hola</h1>
                 </div>
             </div>
             <br><br><br><br>

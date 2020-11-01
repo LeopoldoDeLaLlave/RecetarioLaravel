@@ -9,8 +9,8 @@
 
 
     @for ($i = 0; $i < count($receta); $i++) 
-    <div class="row">
-        <div class="col-6">
+    <div class="row text-center">
+        <div class="col-6 text-center">
             <div class="card h-1 center-block" style="width: 18rem;">
             <img class="card-img-top" src="{{$receta[$i]->ruta}}" alt="foto">
                 <div class="card-body">
@@ -26,7 +26,9 @@
         @php
         $i++
         @endphp
-        @if ($i <=(count($receta)-1)) <div class="col-6 ">
+        <!--Este if hace que solo se ponga la columna en caso de que haya receta-->
+        @if ($i <=(count($receta)-1))
+         <div class="col-6 text-center">
             <div class="card h-1 center-block" style="width: 18rem;">
                 <img class="card-img-top" src="{{$receta[$i]->ruta}}" alt="foto">
                 <div class="card-body">
